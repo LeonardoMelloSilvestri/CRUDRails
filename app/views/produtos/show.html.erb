@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+	<table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Quantidade</th>          
+      </tr>
+    </thead>
+
+    <tbody>      
+        <tr>
+          <td><b><%= @produto.nome %></b></td>
+          <td><b><%= @produto.marca %></b></td>
+          <td><b><%= @produto.quantidade %></b></td>        
+        </tr>
+    </tbody>
+  </table>
+
+<%= link_to '<button type="button" class="btn btn-danger">Voltar</button>'.html_safe, produtos_path %>
+</div>
+
